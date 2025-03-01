@@ -20,8 +20,8 @@ is_nutmeg = 0
 is_cinnamon = 0
 
 #start of programm
-print("Welcome to the Currymaker!")
-print("This Programm will help you to dose your spices for an Indian style curry or gravy.")
+print("Welcome to the currymaker!")
+print("This programm will help you to dose your spices for an Indian style curry or gravy.")
 
 #curry_function
 def get_curry_inputs():
@@ -46,7 +46,7 @@ def get_curry_inputs():
                 print("Your input is invalid. Please make sure to only use natural numbers.")
 
         if is_veggies == 0 and is_protein > 0:
-            print("some vitamines won't hurt you. :)")
+            print("Some vitamines won't hurt you. :)")
                 
 
  #checking if input is valid.
@@ -58,7 +58,7 @@ def get_curry_inputs():
         if is_protein + is_veggies > 20000:
             print("I don't know, if this recipe is suited for industrial amounts.¯\_(ツ)_/¯")
         if is_protein + is_veggies > 10000:
-            print("make sure to provide a pot, that is large enough.")
+            print("Make sure to provide a pot, that is large enough.")
         return is_protein, is_veggies
             
 
@@ -99,9 +99,9 @@ while True:
 
     while True:
         try:          
-            is_garlic = int(input("please provide the amout of garlic cloves:"))
+            is_garlic = int(input("Please provide the amout of garlic cloves:"))
             if is_garlic < 0:
-                print("please enter a positive number.")
+                print("Please enter a positive number.")
                 continue
             break
         except ValueError:
@@ -116,9 +116,9 @@ while True:
 
     while True:
         try:
-            is_ginger = int(input("please provide the amout of ginger you want to use in cm:"))
+            is_ginger = int(input("Please provide the amout of ginger you want to use in cm:"))
             if is_ginger < 0:
-                print("please enter a positive number.")
+                print("Please enter a positive number.")
                 continue
             break
         except ValueError:
